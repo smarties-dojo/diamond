@@ -13,4 +13,13 @@ main = hspec $ do
         generateDiamond 'B' `shouldBe` [" A ", "B B", " A "]
 
     it "returns the correct diamond when given E" $ do
-        generateDiamond 'E' `shouldBe` ["    A    ","   B B   ","  C   C  "," D     D ","E       E"," D     D ","  C   C  ","   B B   ","    A    "]
+        generateDiamond 'E' `shouldBe`
+            ["    A    "
+            ,"   B B   "
+            ,"  C   C  "
+            ," D     D "
+            ,"E       E"
+            ," D     D "
+            ,"  C   C  "
+            ,"   B B   "
+            ,"    A    "]
